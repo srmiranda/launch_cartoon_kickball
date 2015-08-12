@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kickball Site</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <h3>Cartoon Kickball League</h3>
+  <ol>
+    <% teams.keys.each do |team| %>
+    <li><a href="/teams/<%= team %>"><%= team %></a></li>
+    <% end %>
+  </ol>
+  <h3>Position Listings</h3>
+</body>
+</html>
