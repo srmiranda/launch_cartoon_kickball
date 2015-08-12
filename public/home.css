@@ -1,0 +1,56 @@
+body {
+  background-color: #7ec0ee;
+  font-family: sans-serif, 'Arial';
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 14pt;
+  color: white;
+}
+
+#header {
+  margin: 0px;
+  padding: 0px;
+  width: relative;
+  background-color: white;
+  border-bottom: 2px solid black;
+
+}
+
+#header img {
+  margin: 10px;
+}
+
+#peter {
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+#content {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+h2, h3 {
+  padding: 0;
+  margin: 0;
+  color: blue;
+  text-shadow: 2px 2px 0px #eee, 3px 3px 0px #707070;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: black;
+}

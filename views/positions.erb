@@ -2,10 +2,17 @@
 <html lang="en">
 <head>
   <title>Kickball Site</title>
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="/home.css">
 </head>
 <body>
-  <h2><%= position %></h2>
+  <div id=peter>
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png">
+  </div>
+  <div id=header>
+   <img src="http://www.cliparthut.com/clip-arts/625/kickball-tournament-625724.jpg">
+ </div>
+  <div id=content>
+  <h3><%= position %></h3>
   <ol>
     <% teams.each do |team, team_info| %>
       <% team_info.each do |position_name, name| %>
@@ -16,5 +23,6 @@
     <% end %>
   </ol>
   <a href="/teams">Back to Teams</a>
+</div>
 </body>
 </html>

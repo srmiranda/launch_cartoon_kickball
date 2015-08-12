@@ -5,16 +5,25 @@
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
+  <div id=peter>
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Peter_Griffin.png">
+  </div>
+  <div id=header>
+   <img src="http://www.cliparthut.com/clip-arts/625/kickball-tournament-625724.jpg">
+ </div>
+  <div id=content>
   <h3>Cartoon Kickball League</h3>
-  <ol>
+  <ul>
     <% teams.keys.each do |team| %>
     <li><a href="/teams/<%= team %>"><%= team %></a></li>
     <% end %>
-  </ol>
+  </ul>
   <h3>Position Listings</h3>
   <ul>
     <% teams[teams.keys[0]].keys.each do |position| %>
     <li><a href="/positions/<%= position %>"><%= position %></a></li>
     <% end %>
+  </ul>
+</div>
 </body>
 </html>
