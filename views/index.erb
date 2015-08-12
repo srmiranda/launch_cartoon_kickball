@@ -12,5 +12,9 @@
     <% end %>
   </ol>
   <h3>Position Listings</h3>
+  <ul>
+    <% teams[teams.keys[0]].keys.each do |position| %>
+    <li><a href="/positions/<%= position %>"><%= position %></a></li>
+    <% end %>
 </body>
 </html>

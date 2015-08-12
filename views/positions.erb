@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kickball Site</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <h2><%= position %></h2>
+  <ol>
+    <% teams.each do |team, team_info| %>
+      <% team_info.each do |position_name, name| %>
+        <% if position_name == position %>
+          <%= position_name %>:  <%= name %> - <%= team %></br>
+        <% end %>
+      <% end %>
+    <% end %>
+  </ol>
+  <a href="/teams">Back to Teams</a>
+</body>
+</html>
